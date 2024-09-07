@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Shooter - Learn Chinese</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- HSK Level Selection -->
+    <div id="level-selection">
+      <h2>Select HSK Level:</h2>
+      <button class="level-btn" data-level="1">HSK 1</button>
+      <button class="level-btn" data-level="2">HSK 2</button>
+      <button class="level-btn" data-level="3">HSK 3</button>
+      <button class="level-btn" data-level="4">HSK 4</button>
+      <button class="level-btn" data-level="5">HSK 5</button>
+      <button class="level-btn" data-level="6">HSK 6</button>
+    </div>
+
+    <!-- Chinese sentence being constructed -->
+    <div id="chinese-sentence"></div>
+
+    <!-- English sentence and Pinyin translation -->
+    <div id="sentence-info">
+      <div id="english-sentence"></div>
+      <div id="pinyin-sentence"></div>
+    </div>
+
+    <!-- Lives display -->
+    <div id="lives">
+      Lives: <span id="life-count">3</span>
+    </div>
+
+    <!-- Game canvas for falling characters -->
+    <canvas id="gameCanvas"></canvas>
+    
+    <!-- Game over screen -->
+    <div id="game-over" style="display: none;">
+      <h1>Game Over</h1>
+      <button id="restart-btn">Restart</button>
+    </div>
+  </div>
+  
+  <script src="game.js"></script>
+</body>
+</html>
